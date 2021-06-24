@@ -1,6 +1,7 @@
 /*
     Link 1: https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25595966#announcements
     Link 2: https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/25595970#announcements
+    onwards
 
     Using react you want your applications to update on certain user inputs and other triggers.
 
@@ -77,4 +78,27 @@
     to it during the first render, but will instead look at its own memory store where it will have kept
     the latest copy of that particular state variable which will be injected in state on the next render.
 
+    States can be created individually or as a group (as object). This is a personal preference and
+    both the ways are correct.  -> See ExpenseForm.js file in expense-tracker project for example.
+
+    When using the single state(object) pattern, ensure that you use the callback method for updates
+    depending on previous state.
+
+    Example:
+    Do
+    setUserInput( previousState => {
+        return ({
+            ...previousState,
+            enteredAmount: event.target.value
+        })
+    });
+
+    DONT DO
+    Dont manipulate the state explicitly, let react handle the update using a callback function as above
+    setUserInput({
+        ...userInput,
+        enteredAmount: event.target.value
+    })
+
  */
+
