@@ -9,7 +9,7 @@
     This is useful when using forms/inputs.
 
     To achieve this create the state and bind it to the change handlers of the inputs and then
-    add a value attribute to the same input element.
+    add a value attribute to the same input element. -> See ExpenseForm.js in expense tracker
 
     Now when the input is updated from the UI, the model changes because of the change handler.
     When the state value changes it updates the input element on the UI through this value property.

@@ -29,7 +29,7 @@
     during this evaluation process implicitly by react.
 
     To trigger re-evaluations and re-renders you have to explicitly tell react that it needs to hold certain
-     variables to be of high importance/priority and then process re-evaluations when these variables change
+    variables to be of high importance/priority and then process re-evaluations when these variables change
 
     Since, in the last example, a change in the regular variable did not trigger a change on the UI.
 
